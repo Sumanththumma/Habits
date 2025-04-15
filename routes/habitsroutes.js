@@ -1,16 +1,12 @@
 
 import express,{Router} from 'express'
 
-
+import { getHabits,createHabit } from '../controllers/habitsController';
 const routes  = express.Router();
 
- routes.get('/',(req, res)=>{
-    
- })
+ routes.get('/',getHabits());
 
- routes.post('/',(req, res)=>{
-    res.send('created a habit');
-})
+ routes.post('/',createHabit());
  routes.put('/:id',(req, res)=>{
     res.send(`updtaed a habit with the id : ${req.params.id}`);
 })

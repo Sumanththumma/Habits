@@ -21,11 +21,3 @@ export const createHabit = async (req,res) => {
     }
 }
 
-export const updateHabit = async(id) => {
-    try {
-        
-    } catch (error) {
-        console.log(error)
-    }
-}  
-
