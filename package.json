@@ -1,0 +1,27 @@
+{
+  "name": "habitsapi",
+  "version": "1.0.0",
+  "description": "An API built for the habits app which helps tracking and analysing user's habits",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sumanththumma/Habits.git"
+  },
+  "author": "Sumanth Thumma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sumanththumma/Habits/issues"
+  },
+  "homepage": "https://github.com/Sumanththumma/Habits#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "nodemon": "^3.1.9"
+  }
+}
