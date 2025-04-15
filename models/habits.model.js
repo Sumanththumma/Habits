@@ -11,7 +11,9 @@ const habitSchema = new mongoose.Schema({
             date: String
         }
     ]
-},)
+}, {
+    timestamps: true
+})
 
 const Habit = mongoose.model('Habit',habitSchema);
 
