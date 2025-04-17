@@ -2,6 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import routes from './routes/habitsroutes.js';
+import cors from 'cors'
 
 dotenv.config();
 
@@ -11,6 +12,8 @@ mongoose.connect(process.env.MONGODB_URI)
 .then(()=> console.log('connected to MONGODB succesfully'));
 
 const port = process.env.PORT? process.env.PORT: 3000;
+
+app.use(cors())
 
 app.use(express.json());
 
